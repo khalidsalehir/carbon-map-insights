@@ -21,7 +21,7 @@ const competitors = [
 const ComparisonTable = () => {
   const { ref, isVisible } = useScrollAnimation();
   return (
-    <section ref={ref} className="py-24 relative">
+    <section ref={ref} className="py-32 relative" style={{ backgroundColor: 'hsl(218 40% 7%)' }}>
       <div className="container mx-auto px-6">
         <div className={`text-center mb-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
           <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground mb-4">The Competitive Edge</h2>

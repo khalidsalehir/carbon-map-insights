@@ -11,7 +11,7 @@ const audiences = [
 const Audience = () => {
   const { ref, isVisible } = useScrollAnimation();
   return (
-    <section ref={ref} className="py-24 relative">
+    <section ref={ref} className="py-32 relative">
       <div className="container mx-auto px-6">
         <div className={`text-center mb-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
           <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground mb-4">Who Uses CarbonMap</h2>
