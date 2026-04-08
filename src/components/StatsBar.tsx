@@ -1,0 +1,37 @@
+import { useScrollAnimation, useCountUp } from "@/hooks/use-scroll-animation";
+
+const stats = [
+  { value: 29000, suffix: "+", label: "Emitters", color: "text-stat-orange" },
+  { value: 1400, suffix: "+", label: "Capture Projects", color: "text-stat-cyan" },
+  { value: 115, suffix: "", label: "Infrastructure Assets", color: "text-stat-pink" },
+  { value: 25, suffix: "+", label: "Countries", color: "text-stat-purple" },
+];
+
+const StatItem = ({ stat, isVisible }: { stat: typeof stats[0]; isVisible: boolean }) => {
+  const count = useCountUp(stat.value, 2000, isVisible);
+  return (
+    <div className="text-center space-y-1">
+      <div className={`text-3xl sm:text-4xl font-display font-bold ${stat.color}`}>
+        {count.toLocaleString()}{stat.suffix}
+      </div>
+      <div className="text-sm text-muted-foreground">{stat.label}</div>
+    </div>
+  );
+};
+
+const StatsBar = () => {
+  const { ref, isVisible } = useScrollAnimation();
+  return (
+    <section ref={ref} className="relative py-12">
+      <div className="container mx-auto px-6">
+        <div className="glass-card p-8 grid grid-cols-2 md:grid-cols-4 gap-8 glow-cyan">
+          {stats.map((stat) => (
+            <StatItem key={stat.label} stat={stat} isVisible={isVisible} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default StatsBar;
