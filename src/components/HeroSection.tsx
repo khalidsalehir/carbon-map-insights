@@ -52,12 +52,18 @@ const HeroSection = () => (
           </div>
         </div>
 
-        {/* Right — Globe image */}
+        {/* Right — Globe image (blended into background) */}
         <div className="relative flex justify-center animate-fade-up" style={{ animationDelay: '0.2s' }}>
           <div className="relative w-full max-w-lg">
             <div className="absolute inset-0 rounded-full bg-primary/10 blur-3xl scale-75" />
             <img src={globeHero} alt="Global CCS project map visualization" width={800} height={800}
-              className="relative w-full h-auto rounded-2xl" />
+              className="relative w-full h-auto"
+              style={{ mixBlendMode: 'lighten' }} />
+            {/* Feathered edges to blend into background */}
+            <div className="absolute inset-0 pointer-events-none"
+              style={{
+                boxShadow: 'inset 0 0 80px 40px hsl(220 40% 5%)',
+              }} />
           </div>
         </div>
       </div>
