@@ -1,4 +1,5 @@
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import industrialScene from "@/assets/industrial-scene.png";
 
 const stats = [
   { value: "10+ years", label: "CCS & energy transition experience" },
@@ -12,12 +13,13 @@ const OurMission = () => {
 
   return (
     <section ref={ref} className="relative py-32 overflow-hidden">
-      {/* Blurred cyan accent glow on the left */}
       <div className="absolute -left-40 top-1/4 w-[500px] h-[500px] rounded-full bg-primary/8 blur-[160px]" />
       <div className={`container mx-auto px-6 relative z-10 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="grid lg:grid-cols-5 gap-10 items-stretch">
-          {/* Left — Quote card */}
+          {/* Left — Quote card with industrial background */}
           <div className="lg:col-span-2 glass-card p-10 flex flex-col justify-center relative overflow-hidden">
+            <img src={industrialScene} alt="" className="absolute inset-0 w-full h-full object-cover" />
+            <div className="absolute inset-0" style={{ background: 'rgba(8,12,20,0.8)' }} />
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none" />
             <div className="relative z-10">
               <div className="text-5xl text-primary/30 font-display leading-none mb-4">"</div>

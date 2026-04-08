@@ -1,5 +1,6 @@
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { ArrowRight } from "lucide-react";
+import valueChainFlow from "@/assets/value-chain-flow.png";
 
 const steps = [
   { icon: "🏭", label: "Emitters", count: "29,000+", color: "border-stat-orange", textColor: "text-stat-orange", glowColor: "hsl(25 95% 53% / 0.15)" },
@@ -12,8 +13,11 @@ const steps = [
 const ValueChain = () => {
   const { ref, isVisible } = useScrollAnimation();
   return (
-    <section ref={ref} className="relative py-32">
-      {/* Radial glow behind */}
+    <section ref={ref} className="relative py-32 overflow-hidden">
+      {/* Background image */}
+      <img src={valueChainFlow} alt="" className="absolute inset-0 w-full h-full object-cover" />
+      <div className="absolute inset-0" style={{ background: 'rgba(8,12,20,0.75)' }} />
+      {/* Radial glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full bg-primary/5 blur-[120px]" />
       <div className="container mx-auto px-6 relative z-10">
         <div className={`text-center mb-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
@@ -25,7 +29,6 @@ const ValueChain = () => {
           </p>
         </div>
 
-        {/* Connecting line behind cards */}
         <div className="relative">
           <div className="hidden md:block absolute top-1/2 left-[10%] right-[10%] h-px -translate-y-1/2">
             <div className="w-full h-full bg-gradient-to-r from-stat-orange/40 via-primary/40 to-stat-purple/40" />
@@ -36,9 +39,7 @@ const ValueChain = () => {
               <div key={step.label} className="flex-1 flex items-center">
                 <div
                   className={`glass-card p-6 flex-1 border-t-2 ${step.color} hover:scale-105 transition-all duration-300 relative z-10 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}
-                  style={{
-                    animationDelay: `${i * 0.1}s`,
-                  }}
+                  style={{ animationDelay: `${i * 0.1}s` }}
                   onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.boxShadow = `0 0 40px ${step.glowColor}`; }}
                   onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; }}
                 >
