@@ -58,11 +58,10 @@ const HeroSection = () => (
             <div className="absolute inset-0 rounded-full bg-primary/10 blur-3xl scale-75" />
             <img src={globeHero} alt="Global CCS project map visualization" width={800} height={800}
               className="relative w-full h-auto"
-              style={{ mixBlendMode: 'lighten' }} />
-            {/* Feathered edges to blend into background */}
-            <div className="absolute inset-0 pointer-events-none"
               style={{
-                boxShadow: 'inset 0 0 80px 40px hsl(220 40% 5%)',
+                mixBlendMode: 'lighten',
+                mask: 'radial-gradient(circle, white 30%, transparent 70%)',
+                WebkitMask: 'radial-gradient(circle, white 30%, transparent 70%)',
               }} />
           </div>
         </div>
