@@ -33,7 +33,7 @@ const ValueChain = () => {
 
         <div className={`grid grid-cols-5 gap-5 text-center ${isVisible ? 'animate-fade-up' : 'opacity-0'}`} style={{ animationDelay: '0.25s' }}>
           {stages.map((label) => (
-            <span key={label} className="font-body text-[15px] font-medium tracking-wide text-cyan-400">
+            <span key={label} className="font-body text-[15px] font-medium tracking-wide text-accent">
               {label}
             </span>
           ))}
