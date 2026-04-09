@@ -133,7 +133,7 @@ const ValueChain = () => {
       <div className="max-w-[1200px] mx-auto px-5 relative">
         {/* Header */}
         <div
-          className={`text-center mb-[26px] ${isVisible ? "animate-fade-up" : "opacity-0"}`}
+          className={`text-center mb-[12px] ${isVisible ? "animate-fade-up" : "opacity-0"}`}
         >
           <h2
             className="font-display font-semibold text-foreground mb-3"
