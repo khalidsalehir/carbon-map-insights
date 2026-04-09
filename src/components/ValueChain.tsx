@@ -7,11 +7,11 @@ const stages = [
     stat: "29,000+",
     sub: "tracked globally",
     icon: (
-      <g>
-        <rect x="-10" y="-4" width="8" height="12" rx="1" fill="currentColor" fillOpacity={0.7} />
-        <rect x="2" y="2" width="8" height="6" rx="1" fill="currentColor" fillOpacity={0.7} />
-        <polygon points="-6,-4 -6,-10 -4,-4" fill="currentColor" fillOpacity={0.5} />
-        <polygon points="6,2 6,-4 8,2" fill="currentColor" fillOpacity={0.5} />
+      <g transform="scale(1.5)">
+        <rect x="-10" y="-4" width="8" height="12" rx="1" fill="currentColor" fillOpacity={0.85} />
+        <rect x="2" y="2" width="8" height="6" rx="1" fill="currentColor" fillOpacity={0.85} />
+        <polygon points="-6,-4 -6,-10 -4,-4" fill="currentColor" fillOpacity={0.7} />
+        <polygon points="6,2 6,-4 8,2" fill="currentColor" fillOpacity={0.7} />
       </g>
     ),
   },
@@ -21,10 +21,10 @@ const stages = [
     stat: "1,494",
     sub: "installations",
     icon: (
-      <g>
-        <polygon points="0,-12 -10,4 10,4" fill="none" stroke="currentColor" strokeWidth="1.2" opacity={0.7} />
-        <line x1="-6" y1="-2" x2="6" y2="-2" stroke="currentColor" strokeWidth="0.8" opacity={0.5} />
-        <line x1="-8" y1="1" x2="8" y2="1" stroke="currentColor" strokeWidth="0.8" opacity={0.5} />
+      <g transform="scale(1.5)">
+        <polygon points="0,-12 -10,4 10,4" fill="none" stroke="currentColor" strokeWidth="1.2" opacity={0.85} />
+        <line x1="-6" y1="-2" x2="6" y2="-2" stroke="currentColor" strokeWidth="0.8" opacity={0.7} />
+        <line x1="-8" y1="1" x2="8" y2="1" stroke="currentColor" strokeWidth="0.8" opacity={0.7} />
       </g>
     ),
   },
@@ -34,11 +34,11 @@ const stages = [
     stat: "115",
     sub: "infrastructure",
     icon: (
-      <g>
-        <line x1="-11" y1="-3" x2="11" y2="-3" stroke="currentColor" strokeWidth="1.2" opacity={0.7} />
-        <line x1="-11" y1="3" x2="11" y2="3" stroke="currentColor" strokeWidth="1.2" opacity={0.7} />
-        <circle cx="-5" cy="-3" r="1.5" fill="currentColor" fillOpacity={0.6} />
-        <circle cx="5" cy="3" r="1.5" fill="currentColor" fillOpacity={0.6} />
+      <g transform="scale(1.5)">
+        <line x1="-11" y1="-3" x2="11" y2="-3" stroke="currentColor" strokeWidth="1.2" opacity={0.85} />
+        <line x1="-11" y1="3" x2="11" y2="3" stroke="currentColor" strokeWidth="1.2" opacity={0.85} />
+        <circle cx="-5" cy="-3" r="1.5" fill="currentColor" fillOpacity={0.85} />
+        <circle cx="5" cy="3" r="1.5" fill="currentColor" fillOpacity={0.85} />
       </g>
     ),
   },
@@ -48,13 +48,13 @@ const stages = [
     stat: "43",
     sub: "active hubs",
     icon: (
-      <g>
-        <circle cx="0" cy="-6" r="2" fill="currentColor" fillOpacity={0.7} />
-        <circle cx="-7" cy="5" r="2" fill="currentColor" fillOpacity={0.7} />
-        <circle cx="7" cy="5" r="2" fill="currentColor" fillOpacity={0.7} />
-        <line x1="0" y1="-6" x2="-7" y2="5" stroke="currentColor" strokeWidth="0.8" opacity={0.4} />
-        <line x1="0" y1="-6" x2="7" y2="5" stroke="currentColor" strokeWidth="0.8" opacity={0.4} />
-        <line x1="-7" y1="5" x2="7" y2="5" stroke="currentColor" strokeWidth="0.8" opacity={0.4} />
+      <g transform="scale(1.5)">
+        <circle cx="0" cy="-6" r="2" fill="currentColor" fillOpacity={0.85} />
+        <circle cx="-7" cy="5" r="2" fill="currentColor" fillOpacity={0.85} />
+        <circle cx="7" cy="5" r="2" fill="currentColor" fillOpacity={0.85} />
+        <line x1="0" y1="-6" x2="-7" y2="5" stroke="currentColor" strokeWidth="0.8" opacity={0.6} />
+        <line x1="0" y1="-6" x2="7" y2="5" stroke="currentColor" strokeWidth="0.8" opacity={0.6} />
+        <line x1="-7" y1="5" x2="7" y2="5" stroke="currentColor" strokeWidth="0.8" opacity={0.6} />
       </g>
     ),
   },
@@ -64,10 +64,10 @@ const stages = [
     stat: "254",
     sub: "storage projects",
     icon: (
-      <g>
-        <ellipse cx="0" cy="-6" rx="10" ry="3" fill="none" stroke="currentColor" strokeWidth="0.8" opacity={0.7} />
-        <ellipse cx="0" cy="0" rx="10" ry="3" fill="none" stroke="currentColor" strokeWidth="0.8" opacity={0.7} />
-        <ellipse cx="0" cy="6" rx="10" ry="3" fill="none" stroke="currentColor" strokeWidth="0.8" opacity={0.7} />
+      <g transform="scale(1.5)">
+        <ellipse cx="0" cy="-6" rx="10" ry="3" fill="none" stroke="currentColor" strokeWidth="0.8" opacity={0.85} />
+        <ellipse cx="0" cy="0" rx="10" ry="3" fill="none" stroke="currentColor" strokeWidth="0.8" opacity={0.85} />
+        <ellipse cx="0" cy="6" rx="10" ry="3" fill="none" stroke="currentColor" strokeWidth="0.8" opacity={0.85} />
       </g>
     ),
   },
@@ -88,9 +88,10 @@ const ConnectorDots = ({ x1, x2, y, color }: { x1: number; x2: number; y: number
       y1={y}
       x2={x2 - NODE_R - 4}
       y2={y}
-      stroke="rgba(255,255,255,0.2)"
+      stroke={color}
       strokeWidth={0.5}
       strokeDasharray="4 4"
+      opacity={0.25}
     />
     {[0, 1, 2].map((dot) => (
       <circle key={dot} r={2.5} cy={y} fill={color} opacity={0}>
@@ -156,7 +157,7 @@ const ValueChain = () => {
         </div>
 
         {/* SVG Flow */}
-        <div className="flex justify-center overflow-x-auto">
+        <div className="flex justify-center">
           <div style={{ minWidth: SVG_W }}>
             <svg
               viewBox={`0 0 ${SVG_W} ${SVG_H}`}
