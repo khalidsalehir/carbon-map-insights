@@ -67,7 +67,10 @@ const LiveActivityFeed = () => {
           {/* Fade overlay at bottom */}
           <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[hsl(220_35%_7%)] to-transparent pointer-events-none" />
           <div className="text-center mt-10 relative z-10">
-            <a href="#" className="text-sm text-primary font-medium hover:underline">View all activity →</a>
+            <span className="text-sm text-primary font-medium opacity-50 cursor-not-allowed inline-flex items-center gap-2">
+              View all activity →
+              <span className="text-xs text-muted-foreground font-body">Coming soon</span>
+            </span>
           </div>
         </div>
       </div>

@@ -9,15 +9,11 @@ const particles = Array.from({ length: 20 }, (_, i) => ({
 }));
 
 const HeroSection = () => (
-  <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
-    {/* Grid pattern */}
+  <section id="hero" className="relative min-h-screen flex items-center pt-16 overflow-hidden">
     <div className="absolute inset-0 grid-pattern opacity-40" />
-    {/* Noise overlay */}
     <div className="absolute inset-0 noise-overlay pointer-events-none" />
-    {/* Radial glow */}
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-primary/5 blur-3xl" />
 
-    {/* Particles */}
     {particles.map((p) => (
       <div key={p.id} className="absolute animate-float-particle rounded-full bg-primary/60 pointer-events-none"
         style={{ left: p.left, bottom: '-10px', width: p.size, height: p.size, '--duration': p.duration, '--delay': p.delay } as React.CSSProperties} />
@@ -25,7 +21,6 @@ const HeroSection = () => (
 
     <div className="container mx-auto px-6 relative z-10">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
-        {/* Left */}
         <div className="space-y-8 animate-fade-up">
           <div className="inline-flex items-center gap-2 glass-card px-4 py-2 text-xs font-medium text-muted-foreground">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse-glow" />
@@ -43,16 +38,21 @@ const HeroSection = () => (
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <a href="mailto:info@carbonmap.nl?subject=CarbonMap Access Request" className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-all glow-cyan">
+            <a
+              href="mailto:info@carbonmap.nl?subject=CarbonMap%20Demo%20Request"
+              className="bg-primary text-background px-8 py-3.5 rounded-lg font-body text-base font-semibold hover:opacity-90 transition-all glow-cyan"
+            >
               Request Early Access →
             </a>
-            <a href="#" className="border border-border text-foreground px-8 py-3 rounded-lg font-medium hover:bg-muted/50 transition-all">
+            <a
+              href="mailto:info@carbonmap.nl?subject=CarbonMap%20Demo%20Request"
+              className="border border-primary text-primary px-8 py-3.5 rounded-lg font-body text-base font-semibold hover:bg-primary/10 transition-all"
+            >
               Watch Demo
             </a>
           </div>
         </div>
 
-        {/* Right — Globe image (blended into background) */}
         <div className="relative flex justify-center animate-fade-up" style={{ animationDelay: '0.2s' }}>
           <div className="relative w-full max-w-lg">
             <div className="absolute inset-0 rounded-full bg-primary/10 blur-3xl scale-75" />

@@ -17,7 +17,7 @@ const OurMission = () => {
       <div className={`container mx-auto px-6 relative z-10 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="grid lg:grid-cols-5 gap-10 items-stretch">
           {/* Left — Quote card with industrial background */}
-          <div className="lg:col-span-2 glass-card p-10 flex flex-col justify-center relative overflow-hidden">
+          <div className="lg:col-span-2 glass-card p-10 flex flex-col justify-center relative overflow-hidden rounded-xl" style={{ border: '1px solid rgba(255,255,255,0.1)', boxShadow: '0 4px 16px rgba(0,0,0,0.3)' }}>
             <img src={industrialScene} alt="" className="absolute inset-0 w-full h-full object-cover" />
             <div className="absolute inset-0" style={{ background: 'rgba(8,12,20,0.8)' }} />
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none" />
