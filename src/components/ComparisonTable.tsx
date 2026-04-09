@@ -13,9 +13,9 @@ const rows = [
 
 const competitors = [
   { name: "CarbonMap", data: [true, true, true, true, true, true, true] },
-  { name: "CaptureMap", data: [false, false, false, false, false, true, true] },
-  { name: "CarbonStorage.io", data: [false, false, true, false, false, true, false] },
-  { name: "GCCSI Database", data: [false, false, false, false, false, false, false] },
+  { name: "Traditional CCS Databases", data: [false, false, false, false, false, false, false] },
+  { name: "Regional Map Tools", data: [false, false, true, false, false, true, true] },
+  { name: "Industry Reports", data: [false, false, false, false, false, false, false] },
 ];
 
 const ComparisonTable = () => {
@@ -30,9 +30,9 @@ const ComparisonTable = () => {
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-border/30">
-                <th className="text-left p-4 text-muted-foreground font-medium">Feature</th>
+                <th className="text-left px-4 py-2.5 text-muted-foreground font-medium text-sm">Feature</th>
                 {competitors.map((c) => (
-                  <th key={c.name} className={`p-4 text-center font-medium ${c.name === "CarbonMap" ? "text-primary" : "text-muted-foreground"}`}>
+                  <th key={c.name} className={`px-4 py-2.5 text-center font-medium text-sm ${c.name === "CarbonMap" ? "text-primary" : "text-muted-foreground"}`}>
                     {c.name}
                   </th>
                 ))}
@@ -41,9 +41,9 @@ const ComparisonTable = () => {
             <tbody>
               {rows.map((row, ri) => (
                 <tr key={row} className="border-b border-border/20 last:border-0">
-                  <td className="p-4 text-foreground">{row}</td>
+                   <td className="px-4 py-2.5 text-foreground text-sm">{row}</td>
                   {competitors.map((c) => (
-                    <td key={c.name} className={`p-4 text-center ${c.name === "CarbonMap" ? "bg-primary/5" : ""}`}>
+                    <td key={c.name} className={`px-4 py-2.5 text-center ${c.name === "CarbonMap" ? "bg-primary/5" : ""}`}>
                       {c.data[ri] ? <Check className="w-5 h-5 text-primary mx-auto" /> : <Minus className="w-5 h-5 text-muted-foreground/40 mx-auto" />}
                     </td>
                   ))}

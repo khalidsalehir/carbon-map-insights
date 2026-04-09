@@ -9,7 +9,7 @@ import newsDashboard from "@/assets/news-dashboard.png";
 const features = [
   { icon: Map, title: "Interactive Global Map", desc: "Multi-layer filtering across the entire CCS value chain with real-time project status.", image: europeCcsMap },
   { icon: TrendingUp, title: "EU ETS Market Data", desc: "Live carbon pricing, historical trends, and forward curves integrated into every analysis.", image: etsDashboard },
-  { icon: Search, title: "Project Deep-Dives", desc: "Detailed profiles with capacity data, timelines, stakeholders, and regulatory status.", image: aiRadar },
+  { icon: Search, title: "Project Intelligence", desc: "Detailed profiles with capacity data, timelines, stakeholders, and regulatory status.", image: aiRadar },
   { icon: Factory, title: "Emitter Intelligence", desc: "29,000+ industrial sources mapped with emissions data and capture potential.", image: emitterHeatmap },
   { icon: Brain, title: "AI Project Analysis", desc: "Automated feasibility scoring and project benchmarking powered by machine learning.", image: aiRadar },
   { icon: Newspaper, title: "CCS News Feed", desc: "Curated industry news, policy updates, and deal flow from 200+ sources.", image: newsDashboard },

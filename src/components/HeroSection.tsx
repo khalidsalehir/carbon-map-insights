@@ -43,8 +43,8 @@ const HeroSection = () => (
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <a href="#" className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-all glow-cyan">
-              Explore the Map →
+            <a href="mailto:info@carbonmap.nl?subject=CarbonMap Access Request" className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-all glow-cyan">
+              Request Early Access →
             </a>
             <a href="#" className="border border-border text-foreground px-8 py-3 rounded-lg font-medium hover:bg-muted/50 transition-all">
               Watch Demo
