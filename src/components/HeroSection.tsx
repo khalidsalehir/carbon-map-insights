@@ -28,18 +28,17 @@ const HeroSection = () => (
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold leading-tight text-foreground">
-            See every CCS<br />project on{" "}
-            <span className="text-gradient-cyan">Earth.</span>
+            See Every Link in<br />the{" "}
+            <span className="text-gradient-cyan">CCS Chain.</span>
           </h1>
 
           <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-            The most comprehensive CCS intelligence platform. Track emitters, capture installations,
-            transport networks, and storage sites — powered by AI analytics and real-time market data.
+            The only platform that maps CO₂ from industrial source to permanent geological storage — emitters, capture projects, transport, hubs, and storage sites in one integrated view.
           </p>
 
           <div className="flex flex-wrap gap-4">
             <a
-              href="mailto:info@carbonmap.nl?subject=CarbonMap%20Demo%20Request"
+              href="mailto:info@carbonmap.nl?subject=CarbonMap%20Early%20Access%20Request"
               className="bg-primary text-background px-8 py-3.5 rounded-lg font-body text-base font-semibold hover:opacity-90 transition-all glow-cyan"
             >
               Request Early Access →
