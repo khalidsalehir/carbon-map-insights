@@ -31,7 +31,7 @@ const LiveActivityFeed = () => {
   const ordered = [...activities.slice(offset), ...activities.slice(0, offset)];
 
   return (
-    <section ref={ref} className="relative py-32 overflow-hidden" style={{ backgroundColor: 'hsl(220 55% 17%)' }}>
+    <section ref={ref} className="relative py-32 overflow-hidden" style={{ backgroundColor: 'hsl(220 35% 7%)' }}>
       <div className="absolute inset-0 grid-pattern opacity-15" />
       <div className={`container mx-auto px-6 relative z-10 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="text-center mb-12">
@@ -65,7 +65,7 @@ const LiveActivityFeed = () => {
           </div>
 
           {/* Fade overlay at bottom */}
-          <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[hsl(220_55%_17%)] to-transparent pointer-events-none" />
+          <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[hsl(220_35%_7%)] to-transparent pointer-events-none" />
           <div className="text-center mt-10 relative z-10">
             <span className="text-sm text-primary font-medium opacity-50 cursor-not-allowed inline-flex items-center gap-2">
               View all activity →

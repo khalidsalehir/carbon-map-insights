@@ -19,7 +19,7 @@ const WhyCarbonMap = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section ref={ref} className="relative py-32 overflow-hidden" style={{ background: 'linear-gradient(180deg, hsl(220 62% 15%) 0%, hsl(220 55% 17%) 50%, hsl(220 62% 15%) 100%)' }}>
+    <section ref={ref} className="relative py-32 overflow-hidden" style={{ background: 'linear-gradient(180deg, hsl(220 40% 5%) 0%, hsl(220 35% 7%) 50%, hsl(220 40% 5%) 100%)' }}>
       <div className="absolute inset-0 grid-pattern opacity-10" />
       <div className={`container mx-auto px-6 relative z-10 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="text-center mb-16">

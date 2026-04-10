@@ -4,10 +4,10 @@
 
 @layer base {
   :root {
-    --background: 220 62% 15%;
+    --background: 220 40% 5%;
     --foreground: 210 20% 90%;
 
-    --card: 220 45% 18%;
+    --card: 220 30% 8%;
     --card-foreground: 210 20% 90%;
 
     --popover: 220 30% 8%;
@@ -19,17 +19,17 @@
     --secondary: 168 76% 40%;
     --secondary-foreground: 210 20% 95%;
 
-    --muted: 220 40% 24%;
+    --muted: 220 20% 14%;
     --muted-foreground: 215 15% 55%;
 
-    --accent: 220 50% 22%;
+    --accent: 220 25% 12%;
     --accent-foreground: 210 20% 90%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 40% 26%;
-    --input: 220 40% 26%;
+    --border: 220 20% 16%;
+    --input: 220 20% 16%;
     --ring: 187 85% 53%;
 
     --radius: 0.75rem;
@@ -39,16 +39,16 @@
     --stat-pink: 330 80% 60%;
     --stat-purple: 270 70% 60%;
 
-    --glass-bg: 220 50% 20% / 0.6;
-    --glass-border: 220 30% 35% / 0.3;
+    --glass-bg: 220 30% 10% / 0.6;
+    --glass-border: 220 20% 25% / 0.3;
 
-    --sidebar-background: 220 45% 18%;
+    --sidebar-background: 220 30% 8%;
     --sidebar-foreground: 210 20% 90%;
     --sidebar-primary: 187 85% 53%;
     --sidebar-primary-foreground: 220 40% 5%;
     --sidebar-accent: 220 25% 12%;
     --sidebar-accent-foreground: 210 20% 90%;
-    --sidebar-border: 220 40% 26%;
+    --sidebar-border: 220 20% 16%;
     --sidebar-ring: 187 85% 53%;
   }
 }
@@ -87,8 +87,8 @@
   }
   .grid-pattern {
     background-image:
-      linear-gradient(hsl(220 40% 26% / 0.3) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(220 40% 26% / 0.3) 1px, transparent 1px);
+      linear-gradient(hsl(220 20% 16% / 0.3) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(220 20% 16% / 0.3) 1px, transparent 1px);
     background-size: 60px 60px;
   }
 }

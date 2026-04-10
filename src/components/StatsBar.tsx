@@ -25,7 +25,7 @@ const StatsBar = () => {
   return (
     <section ref={ref} className="relative py-12">
       <div className="container mx-auto px-6">
-        <div className="glass-card p-8 grid grid-cols-2 md:grid-cols-5 gap-8 glow-cyan" style={{ background: 'linear-gradient(135deg, hsl(220 55% 18% / 0.8), hsl(215 50% 20% / 0.6))' }}>
+        <div className="glass-card p-8 grid grid-cols-2 md:grid-cols-5 gap-8 glow-cyan" style={{ background: 'linear-gradient(135deg, hsl(220 35% 8% / 0.8), hsl(215 40% 10% / 0.6))' }}>
           {stats.map((stat) => (
             <StatItem key={stat.label} stat={stat} isVisible={isVisible} />
           ))}

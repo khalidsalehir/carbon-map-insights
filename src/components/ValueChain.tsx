@@ -119,7 +119,7 @@ const ValueChain = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section ref={ref} className="py-20" style={{ backgroundColor: "hsl(220 62% 13%)" }}>
+    <section ref={ref} className="py-20" style={{ backgroundColor: "hsl(220 40% 4%)" }}>
       {/* Subtle center glow */}
       <div
         className="absolute left-1/2 -translate-x-1/2 w-[600px] h-[300px] pointer-events-none"
