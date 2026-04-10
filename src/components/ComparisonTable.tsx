@@ -3,19 +3,24 @@ import { Check, Minus } from "lucide-react";
 
 const rows = [
   "Full value chain coverage",
-  "29,000+ emitters",
-  "Transport/Hub classification",
-  "Live EU ETS pricing",
-  "AI project analysis",
-  "Interactive map",
-  "Self-service access",
+  "30,000+ emitters globally",
+  "Storage sites & transport networks",
+  "41 CCS hubs tracked",
+  "Live carbon market pricing (EU ETS, UK ETS, RGGI)",
+  "CCS business case calculator",
+  "CO₂ engineering tools (PVT, cost curves)",
+  "AI-powered project analysis",
+  "Real-time news & intel feed",
+  "Interactive map with layer filtering",
+  "Modern web platform (no Power BI needed)",
+  "Sector progress vs IEA 2030 targets",
 ];
 
 const competitors = [
-  { name: "CarbonMap", data: [true, true, true, true, true, true, true] },
-  { name: "Traditional Databases", data: [false, false, false, false, false, false, false] },
-  { name: "Regional Tools", data: [false, false, true, false, false, true, true] },
-  { name: "Industry Reports", data: [false, false, false, false, false, false, false] },
+  { name: "CarbonMap", data: [true, true, true, true, true, true, true, true, true, true, true, true] },
+  { name: "Traditional Databases", data: [false, false, false, false, false, false, false, false, false, false, false, false] },
+  { name: "Regional Tools", data: [false, false, true, false, false, false, false, false, false, true, true, false] },
+  { name: "Industry Reports", data: [false, false, false, false, false, false, false, false, true, false, false, true] },
 ];
 
 const ComparisonTable = () => {

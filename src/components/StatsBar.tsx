@@ -1,10 +1,11 @@
 import { useScrollAnimation, useCountUp } from "@/hooks/use-scroll-animation";
 
 const stats = [
-  { value: 29000, suffix: "+", label: "Emitters", color: "text-stat-orange" },
-  { value: 1400, suffix: "+", label: "Capture Projects", color: "text-stat-cyan" },
-  { value: 115, suffix: "", label: "Infrastructure Assets", color: "text-stat-pink" },
-  { value: 25, suffix: "+", label: "Countries", color: "text-stat-purple" },
+  { value: 30000, suffix: "+", label: "Emitters", color: "text-primary" },
+  { value: 1400, suffix: "+", label: "Capture Projects", color: "text-primary" },
+  { value: 113, suffix: "", label: "Storage Sites", color: "text-primary" },
+  { value: 41, suffix: "", label: "CCS Hubs", color: "text-primary" },
+  { value: 156, suffix: "", label: "Countries", color: "text-primary" },
 ];
 
 const StatItem = ({ stat, isVisible }: { stat: typeof stats[0]; isVisible: boolean }) => {
@@ -24,7 +25,7 @@ const StatsBar = () => {
   return (
     <section ref={ref} className="relative py-12">
       <div className="container mx-auto px-6">
-        <div className="glass-card p-8 grid grid-cols-2 md:grid-cols-4 gap-8 glow-cyan" style={{ background: 'linear-gradient(135deg, hsl(220 35% 8% / 0.8), hsl(215 40% 10% / 0.6))' }}>
+        <div className="glass-card p-8 grid grid-cols-2 md:grid-cols-5 gap-8 glow-cyan" style={{ background: 'linear-gradient(135deg, hsl(220 35% 8% / 0.8), hsl(215 40% 10% / 0.6))' }}>
           {stats.map((stat) => (
             <StatItem key={stat.label} stat={stat} isVisible={isVisible} />
           ))}

@@ -44,12 +44,11 @@ const HeroSection = () => (
             >
               Request Early Access →
             </a>
-            <a
-              href="mailto:info@carbonmap.nl?subject=CarbonMap%20Demo%20Request"
-              className="border border-primary text-primary px-8 py-3.5 rounded-lg font-body text-base font-semibold hover:bg-primary/10 transition-all"
+            <span
+              className="border border-muted-foreground/30 text-muted-foreground/50 px-8 py-3.5 rounded-lg font-body text-base font-semibold cursor-not-allowed"
             >
-              Watch Demo
-            </a>
+              Watch Demo — Coming Soon
+            </span>
           </div>
         </div>
 
