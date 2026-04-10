@@ -144,6 +144,7 @@ const FeatureCard = ({
 
 /* ════════════════════════════════════════════════ */
 const Platform = () => {
+  usePlatformMeta();
   return (
     <div className="min-h-screen bg-background noise-overlay">
       <Navbar />
