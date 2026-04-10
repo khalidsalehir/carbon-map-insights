@@ -1,11 +1,15 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import StatsBar from "@/components/StatsBar";
+import LiveActivityFeed from "@/components/LiveActivityFeed";
 import ValueChain from "@/components/ValueChain";
-import PlatformHighlights from "@/components/PlatformHighlights";
-import ComparisonTable from "@/components/ComparisonTable";
+import WhyCarbonMap from "@/components/WhyCarbonMap";
+import FeaturesGrid from "@/components/FeaturesGrid";
+import OurMission from "@/components/OurMission";
 import Audience from "@/components/Audience";
+import ComparisonTable from "@/components/ComparisonTable";
 import FinalCTA from "@/components/FinalCTA";
+import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
 
 const SectionDivider = () => (
@@ -19,15 +23,23 @@ const Index = () => (
     <SectionDivider />
     <StatsBar />
     <SectionDivider />
+    <LiveActivityFeed />
+    <SectionDivider />
     <ValueChain />
     <SectionDivider />
-    <PlatformHighlights />
+    <WhyCarbonMap />
     <SectionDivider />
-    <ComparisonTable />
+    <FeaturesGrid />
+    <SectionDivider />
+    <OurMission />
     <SectionDivider />
     <Audience />
     <SectionDivider />
+    <ComparisonTable />
+    <SectionDivider />
     <FinalCTA />
+    <SectionDivider />
+    <Newsletter />
     <Footer />
   </div>
 );
