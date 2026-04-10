@@ -2,6 +2,12 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import platformGlobalMap from "@/assets/platform-global-map.png";
+import platformStorageMap from "@/assets/platform-storage-map.png";
+import platformAnalytics from "@/assets/platform-analytics.png";
+import platformCarbonMarkets from "@/assets/platform-carbon-markets.png";
+import platformEmitterDb from "@/assets/platform-emitter-db.png";
+import platformNewsIntel from "@/assets/platform-news-intel.png";
+import platformEngineeringTools from "@/assets/platform-engineering-tools.png";
 import {
   Bot,
   UserCheck,
@@ -160,7 +166,7 @@ const Platform = () => {
             />
           </div>
           <div className="order-1 md:order-2">
-            <PlaceholderImage label="CCS Storage Map" />
+            <img src={platformStorageMap} alt="CCS Storage Map screenshot" className="w-full rounded-xl object-cover border" style={{ borderColor: 'rgba(255,255,255,0.08)' }} />
           </div>
         </div>
       </Section>
@@ -176,6 +182,8 @@ const Platform = () => {
               Real-time tracking and deep analysis of Carbon Capture and Storage
               initiatives worldwide.
             </p>
+
+            <img src={platformAnalytics} alt="Analytics & Intelligence screenshot" className="w-full rounded-xl object-cover border mb-10" style={{ borderColor: 'rgba(255,255,255,0.08)' }} />
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
               <Metric value="627.5 Mtpa" label="Pipeline Capacity" />
@@ -216,6 +224,9 @@ const Platform = () => {
             Live ETS pricing, cross-market comparisons, and CCS business case
             analysis.
           </p>
+
+          <img src={platformCarbonMarkets} alt="Carbon Markets screenshot" className="w-full rounded-xl object-cover border mb-10" style={{ borderColor: 'rgba(255,255,255,0.08)' }} />
+
           <div className="grid md:grid-cols-3 gap-6">
             <FeatureCard
               title="Live Carbon Pricing"
@@ -236,7 +247,7 @@ const Platform = () => {
       {/* ── 6. Emitter Database ── */}
       <Section className="py-16">
         <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-          <PlaceholderImage label="Emitter Database" />
+          <img src={platformEmitterDb} alt="Emitter Database screenshot" className="w-full rounded-xl object-cover border" style={{ borderColor: 'rgba(255,255,255,0.08)' }} />
           <div>
             <h2 className="text-3xl font-display font-bold text-foreground mb-4">
               Emitter Database
@@ -281,7 +292,7 @@ const Platform = () => {
             />
           </div>
           <div className="order-1 md:order-2">
-            <PlaceholderImage label="News & Intel" />
+            <img src={platformNewsIntel} alt="News & Intel screenshot" className="w-full rounded-xl object-cover border" style={{ borderColor: 'rgba(255,255,255,0.08)' }} />
           </div>
         </div>
       </Section>
@@ -295,6 +306,9 @@ const Platform = () => {
           <p className="text-muted-foreground max-w-2xl mx-auto mb-10">
             Purpose-built calculators for CCS professionals.
           </p>
+
+          <img src={platformEngineeringTools} alt="CO₂ Engineering Tools screenshot" className="w-full rounded-xl object-cover border mb-10" style={{ borderColor: 'rgba(255,255,255,0.08)' }} />
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <FeatureCard
               title="CO₂ PVT Calculator"
