@@ -1,6 +1,51 @@
+import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+
+/* Update meta tags for /platform page */
+const usePlatformMeta = () => {
+  useEffect(() => {
+    document.title = "CarbonMap Platform — Complete CCS Intelligence Suite";
+    const metas: Record<string, string> = {
+      "og:title": "CarbonMap Platform — Complete CCS Intelligence Suite",
+      "og:description": "Interactive maps, AI analytics, live carbon market pricing, CO₂ engineering tools, and transparent data for CCS professionals.",
+      "og:url": "https://carbonmap.nl/platform",
+      "og:type": "website",
+      "og:image": "https://www.carbonmap.nl/og-preview.png",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "CarbonMap Platform — Complete CCS Intelligence Suite",
+      "twitter:description": "Interactive maps, AI analytics, live carbon market pricing, CO₂ engineering tools, and transparent data for CCS professionals.",
+      "twitter:image": "https://www.carbonmap.nl/og-preview.png",
+    };
+    const original: Record<string, string | null> = {};
+    Object.entries(metas).forEach(([key, value]) => {
+      const attr = key.startsWith("og:") ? "property" : "name";
+      let el = document.querySelector(`meta[${attr}="${key}"]`) as HTMLMetaElement | null;
+      if (el) {
+        original[key] = el.getAttribute("content");
+        el.setAttribute("content", value);
+      } else {
+        el = document.createElement("meta");
+        el.setAttribute(attr, key);
+        el.setAttribute("content", value);
+        document.head.appendChild(el);
+        original[key] = null;
+      }
+    });
+    const origTitle = "CarbonMap — Global CCS Intelligence Platform";
+    return () => {
+      document.title = origTitle;
+      Object.entries(original).forEach(([key, orig]) => {
+        const attr = key.startsWith("og:") ? "property" : "name";
+        const el = document.querySelector(`meta[${attr}="${key}"]`) as HTMLMetaElement | null;
+        if (!el) return;
+        if (orig === null) el.remove();
+        else el.setAttribute("content", orig);
+      });
+    };
+  }, []);
+};
 import platformGlobalMap from "@/assets/platform-global-map.png";
 import platformStorageMap from "@/assets/platform-storage-map.png";
 import platformAnalytics from "@/assets/platform-analytics.png";
@@ -99,6 +144,7 @@ const FeatureCard = ({
 
 /* ════════════════════════════════════════════════ */
 const Platform = () => {
+  usePlatformMeta();
   return (
     <div className="min-h-screen bg-background noise-overlay">
       <Navbar />
