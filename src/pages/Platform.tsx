@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import platformGlobalMap from "@/assets/platform-global-map.png";
 import {
   Bot,
   UserCheck,
