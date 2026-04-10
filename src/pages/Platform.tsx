@@ -114,7 +114,7 @@ const Platform = () => {
       {/* ── 2. Interactive Maps ── */}
       <Section className="py-16">
         <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-          <PlaceholderImage label="Global CCS Map" />
+          <img src={platformGlobalMap} alt="Global CCS Map screenshot" className="w-full rounded-xl object-cover border" style={{ borderColor: 'rgba(255,255,255,0.08)' }} />
           <div>
             <h2 className="text-3xl font-display font-bold text-foreground mb-4">
               Global CCS Map
