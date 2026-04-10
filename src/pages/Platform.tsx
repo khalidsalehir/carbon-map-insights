@@ -20,7 +20,7 @@ import {
 
 /* ─── Placeholder screenshot ─── */
 const PlaceholderImage = ({ label }: { label: string }) => (
-  <div className="w-full aspect-video rounded-xl bg-[hsl(220,30%,8%)] border border-border/30 flex items-center justify-center">
+  <div className="w-full aspect-video rounded-xl bg-[hsl(220,50%,18%)] border border-border/30 flex items-center justify-center">
     <span className="font-mono text-sm text-muted-foreground">{label}</span>
   </div>
 );
