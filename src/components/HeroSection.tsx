@@ -44,11 +44,13 @@ const HeroSection = () => (
             >
               Request Early Access →
             </a>
-            <span
-              className="border border-muted-foreground/30 text-muted-foreground/50 px-8 py-3.5 rounded-lg font-body text-base font-semibold cursor-not-allowed"
+            <a
+              href="#demo-video"
+              onClick={(e) => { e.preventDefault(); document.getElementById('demo-video')?.scrollIntoView({ behavior: 'smooth' }); }}
+              className="border border-muted-foreground/30 text-muted-foreground px-8 py-3.5 rounded-lg font-body text-base font-semibold hover:border-primary/50 hover:text-primary transition-all"
             >
-              Watch Demo — Coming Soon
-            </span>
+              Watch Demo →
+            </a>
           </div>
         </div>
 

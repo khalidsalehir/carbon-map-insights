@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import DemoVideo from "@/components/DemoVideo";
 import StatsBar from "@/components/StatsBar";
 import LiveActivityFeed from "@/components/LiveActivityFeed";
 import ValueChain from "@/components/ValueChain";
@@ -20,6 +21,8 @@ const Index = () => (
   <div className="min-h-screen bg-background noise-overlay">
     <Navbar />
     <HeroSection />
+    <SectionDivider />
+    <DemoVideo />
     <SectionDivider />
     <StatsBar />
     <SectionDivider />
