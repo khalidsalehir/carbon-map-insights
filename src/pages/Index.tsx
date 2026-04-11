@@ -22,6 +22,8 @@ const Index = () => (
     <Navbar />
     <HeroSection />
     <SectionDivider />
+    <DemoVideo />
+    <SectionDivider />
     <StatsBar />
     <SectionDivider />
     <LiveActivityFeed />
