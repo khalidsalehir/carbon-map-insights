@@ -1,5 +1,5 @@
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
-import { Factory, Filter, ArrowRight, Hub, Database } from "lucide-react";
+import { Factory, Filter, ArrowRight, Network, Database } from "lucide-react";
 
 const stages = [
   { icon: Factory, label: "Industrial Emitters", stat: "29,000+" },
