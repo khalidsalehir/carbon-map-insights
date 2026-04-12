@@ -22,11 +22,11 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-4">
           <Link
             to="/platform"
-            className={`font-body text-[15px] font-medium transition-colors ${
-              isOnPlatform ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+            className={`font-body text-[15px] font-medium border border-white/15 rounded-lg px-5 py-2 text-white hover:border-white/30 transition-all ${
+              isOnPlatform ? "border-white/30" : ""
             }`}
           >
             Platform
