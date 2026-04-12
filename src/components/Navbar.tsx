@@ -55,8 +55,8 @@ const Navbar = () => {
                 <Link
                   to="/platform"
                   onClick={() => setOpen(false)}
-                  className={`font-body text-lg font-medium transition-colors ${
-                    isOnPlatform ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                  className={`font-body text-lg font-medium border border-white/15 rounded-lg px-4 py-2 text-center text-white hover:border-white/30 transition-all ${
+                    isOnPlatform ? "border-white/30" : ""
                   }`}
                 >
                   Platform
