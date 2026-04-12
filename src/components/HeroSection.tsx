@@ -39,12 +39,10 @@ const HeroSection = () => (
 
           <div className="flex flex-wrap gap-4">
             <a
-              href="https://calendly.com/carbonmap-info/30min"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:info@carbonmap.nl"
               className="bg-primary text-background px-8 py-3.5 rounded-lg font-body text-base font-semibold hover:opacity-90 transition-all glow-cyan"
             >
-              Request Demo →
+              Request Early Access →
             </a>
             <a
               href="#demo-video"
@@ -54,12 +52,6 @@ const HeroSection = () => (
               Watch Demo →
             </a>
           </div>
-          <a
-            href="mailto:info@carbonmap.nl"
-            className="text-sm text-white/40 hover:text-white/60 hover:underline transition-all underline-offset-4"
-          >
-            Or email us at info@carbonmap.nl
-          </a>
         </div>
 
         <div className="relative flex justify-center animate-fade-up" style={{ animationDelay: '0.2s' }}>
