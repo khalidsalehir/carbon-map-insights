@@ -5,7 +5,7 @@ const stages = [
   { icon: Factory, label: "Industrial Emitters", stat: "29,000+" },
   { icon: Filter, label: "Capture Installations", stat: "1,494" },
   { icon: ArrowRight, label: "Pipeline Transport", stat: "115" },
-  { icon: Hub, label: "Hubs & Terminals", stat: "43" },
+  { icon: Network, label: "Hubs & Terminals", stat: "43" },
   { icon: Database, label: "Geological Storage", stat: "254" },
 ];
 
