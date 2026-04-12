@@ -54,6 +54,12 @@ const HeroSection = () => (
               Watch Demo →
             </a>
           </div>
+          <a
+            href="mailto:info@carbonmap.nl"
+            className="text-sm text-white/40 hover:text-white/60 hover:underline transition-all underline-offset-4"
+          >
+            Or email us at info@carbonmap.nl
+          </a>
         </div>
 
         <div className="relative flex justify-center animate-fade-up" style={{ animationDelay: '0.2s' }}>
