@@ -446,7 +446,9 @@ const Platform = () => {
               Request a demo to see how CarbonMap fits your workflow.
             </p>
             <a
-              href="mailto:info@carbonmap.nl?subject=CarbonMap%20Demo%20Request"
+              href="https://calendly.com/carbonmap-info/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-primary text-background px-10 py-4 rounded-lg text-lg font-body font-semibold hover:opacity-90 transition-all glow-cyan-strong"
             >
               Request Demo →

@@ -32,7 +32,9 @@ const Navbar = () => {
             Platform
           </Link>
           <a
-            href="mailto:info@carbonmap.nl?subject=CarbonMap%20Demo%20Request"
+            href="https://calendly.com/carbonmap-info/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="border border-primary text-primary px-5 py-2 rounded-lg font-body text-[15px] font-medium hover:bg-primary/10 transition-all"
           >
             Request Demo →
@@ -60,7 +62,9 @@ const Navbar = () => {
                   Platform
                 </Link>
                 <a
-                  href="mailto:info@carbonmap.nl?subject=CarbonMap%20Demo%20Request"
+                  href="https://calendly.com/carbonmap-info/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setOpen(false)}
                   className="border border-primary text-primary px-5 py-2 rounded-lg font-body text-base font-medium hover:bg-primary/10 transition-all text-center"
                 >

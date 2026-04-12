@@ -39,10 +39,12 @@ const HeroSection = () => (
 
           <div className="flex flex-wrap gap-4">
             <a
-              href="mailto:info@carbonmap.nl?subject=CarbonMap%20Demo%20Request"
+              href="https://calendly.com/carbonmap-info/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary text-background px-8 py-3.5 rounded-lg font-body text-base font-semibold hover:opacity-90 transition-all glow-cyan"
             >
-              Request Early Access →
+              Request Demo →
             </a>
             <a
               href="#demo-video"
