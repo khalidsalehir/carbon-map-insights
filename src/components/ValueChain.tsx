@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, useCallback } from "react";
+import { useEffect, useRef, useState } from "react";
 
 /* ── Palette & data ── */
 const palette = ["#22d3ee", "#14b8a6", "#f472b6", "#fb923c", "#a78bfa"];
