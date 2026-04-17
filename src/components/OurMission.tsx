@@ -1,11 +1,12 @@
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import { ArrowUpRight } from "lucide-react";
 import industrialScene from "@/assets/industrial-scene.png";
 
 const stats = [
-  { value: "10+ years", label: "CCS & energy transition experience" },
+  { value: "25+ years", label: "Combined CCS + energy experience" },
   { value: "€500M+", label: "In projects supported" },
-  { value: "150+", label: "Countries covered" },
-  { value: "Full Stack", label: "Capture to storage" },
+  { value: "NL · UK · NO · DE", label: "Primary coverage markets" },
+  { value: "Operator DNA", label: "Built by people who've shipped" },
 ];
 
 const OurMission = () => {
@@ -19,14 +20,14 @@ const OurMission = () => {
           {/* Left — Quote card with industrial background */}
           <div className="lg:col-span-2 glass-card p-10 flex flex-col justify-center relative overflow-hidden rounded-xl" style={{ border: '1px solid rgba(255,255,255,0.1)', boxShadow: '0 4px 16px rgba(0,0,0,0.3)' }}>
             <img src={industrialScene} alt="" className="absolute inset-0 w-full h-full object-cover" />
-            <div className="absolute inset-0" style={{ background: 'rgba(8,12,20,0.8)' }} />
+            <div className="absolute inset-0" style={{ background: 'rgba(8,12,20,0.82)' }} />
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none" />
             <div className="relative z-10">
               <div className="text-5xl text-primary/30 font-display leading-none mb-4">"</div>
               <blockquote className="text-lg font-display text-foreground leading-relaxed italic mb-6">
-                The success of CCS depends on data, collaboration, and informed decision-making. CarbonMap brings it all together.
+                CCS succeeds when the people mapping it have also operated it. We started this platform because the public data was missing the operational reality — and the operational reality was missing the data. We built the bridge.
               </blockquote>
-              <cite className="text-sm text-muted-foreground not-italic">— The CarbonMap Team</cite>
+              <cite className="text-sm text-muted-foreground not-italic">— The CarbonMap team</cite>
             </div>
           </div>
 
@@ -34,13 +35,13 @@ const OurMission = () => {
           <div className="lg:col-span-3 flex flex-col gap-8">
             <div>
               <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground mb-6">
-                Built for the <span className="text-gradient-cyan">CCS Industry</span>
+                Built by <span className="text-gradient-cyan">CCS operators</span>, not data vendors.
               </h2>
               <p className="text-muted-foreground leading-relaxed" style={{ lineHeight: '1.8' }}>
-                CarbonMap was built by professionals with deep operational experience in CCS project development,
-                CO₂ transport infrastructure, energy transition strategy, and subsidy frameworks across Europe.
-                We combine hands-on CCUS expertise with advanced data engineering to deliver intelligence that
-                actually moves projects forward.
+                A team with 25+ years combined inside European CCS and energy infrastructure —
+                Gasunie, Vopak Ventures, HyET Solar, PwC, Accenture, TU Delft. We spent the last
+                decade commissioning assets, structuring deals, and writing subsidy applications.
+                Now we map the whole thing.
               </p>
             </div>
 
@@ -53,6 +54,14 @@ const OurMission = () => {
                 </div>
               ))}
             </div>
+
+            <a
+              href="mailto:info@carbonmap.nl?subject=Team%20inquiry"
+              className="inline-flex items-center gap-2 self-start text-sm font-body text-muted-foreground hover:text-primary transition-colors group"
+            >
+              <span>Meet the team — names on request</span>
+              <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </a>
           </div>
         </div>
       </div>

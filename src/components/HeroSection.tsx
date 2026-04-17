@@ -33,10 +33,15 @@ const HeroSection = () => (
             <span className="text-gradient-cyan">Earth.</span>
           </h1>
 
-          <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-            The most comprehensive CCS intelligence platform. Track 30,000+ emitters, capture installations,
-            transport networks, and storage sites — powered by AI analytics and real-time market data.
-          </p>
+          <div className="max-w-xl space-y-2">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              The most comprehensive CCS intelligence platform. Track emitters, capture installations,
+              transport networks, and storage sites.
+            </p>
+            <p className="text-sm text-muted-foreground/70 font-body">
+              Built from Rotterdam. Grounded in European infrastructure.
+            </p>
+          </div>
 
           <div className="flex flex-wrap gap-4">
             <a
