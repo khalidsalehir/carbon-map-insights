@@ -4,7 +4,7 @@ import industrialScene from "@/assets/industrial-scene.png";
 
 const stats = [
   { value: "25+ years", label: "Combined CCS + energy experience" },
-  { value: "€500M+", label: "In projects supported" },
+  { value: "€1B+", label: "In projects supported" },
   { value: "NL · UK · NO · DE", label: "Primary coverage markets" },
   { value: "Operator DNA", label: "Built by people who've shipped" },
 ];
@@ -38,10 +38,11 @@ const OurMission = () => {
                 Built by <span className="text-gradient-cyan">CCS operators</span>, not data vendors.
               </h2>
               <p className="text-muted-foreground leading-relaxed" style={{ lineHeight: '1.8' }}>
-                A team with 25+ years combined inside European CCS and energy infrastructure —
-                Gasunie, Vopak Ventures, HyET Solar, PwC, Accenture, TU Delft. We spent the last
-                decade commissioning assets, structuring deals, and writing subsidy applications.
-                Now we map the whole thing.
+                A team with 25+ years combined inside European energy infrastructure — Gasunie,
+                Vopak, solar manufacturing, Big 4 advisory. We've seen how carbon markets evolve,
+                how ETS regulations reshape project economics, how CCS technology matures, and how
+                infrastructure actually gets permitted and built. CCS is the same game scaled — and
+                we built the map we wished existed.
               </p>
             </div>
 

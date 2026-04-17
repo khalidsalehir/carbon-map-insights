@@ -39,21 +39,21 @@ const ThreeMoats = () => {
         <div className="grid lg:grid-cols-2 gap-5 max-w-6xl mx-auto">
           {/* Tile 1 — Large left */}
           <div
-            className={`relative overflow-hidden rounded-[4px] border border-border/40 hover:border-primary/40 transition-all duration-300 group lg:row-span-2 min-h-[480px] ${
+            className={`relative overflow-hidden rounded-[4px] hover:border-primary/40 transition-all duration-300 group lg:row-span-2 min-h-[480px] ${
               isVisible ? "animate-fade-up" : "opacity-0"
             }`}
-            style={{ animationDelay: "0.15s" }}
+            style={{ animationDelay: "0.15s", border: "1px solid rgba(255,255,255,0.08)" }}
           >
             <img
               src={pipelineNetwork}
               alt=""
-              className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 group-hover:scale-105 transition-all duration-700"
+              className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
             />
             <div
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(180deg, rgba(8,12,20,0.5) 0%, rgba(8,12,20,0.85) 60%, rgba(8,12,20,0.95) 100%)",
+                  "linear-gradient(180deg, rgba(8,12,20,0.3) 0%, rgba(8,12,20,0.55) 60%, rgba(8,12,20,0.7) 100%)",
               }}
             />
             <div className="relative z-10 p-10 flex flex-col justify-end h-full min-h-[480px]">
@@ -79,11 +79,12 @@ const ThreeMoats = () => {
 
           {/* Tile 2 — Top right */}
           <div
-            className={`relative rounded-[4px] border border-border/40 hover:border-primary/40 transition-all duration-300 p-10 group min-h-[230px] ${
+            className={`relative rounded-[4px] hover:border-primary/40 transition-all duration-300 p-10 group min-h-[230px] ${
               isVisible ? "animate-fade-up" : "opacity-0"
             }`}
             style={{
               animationDelay: "0.3s",
+              border: "1px solid rgba(255,255,255,0.08)",
               background:
                 "linear-gradient(135deg, rgba(20,184,166,0.04) 0%, rgba(8,12,20,0.4) 100%)",
             }}
@@ -114,11 +115,12 @@ const ThreeMoats = () => {
 
           {/* Tile 3 — Bottom right */}
           <div
-            className={`relative rounded-[4px] border border-border/40 hover:border-primary/40 transition-all duration-300 p-10 group min-h-[230px] ${
+            className={`relative rounded-[4px] hover:border-primary/40 transition-all duration-300 p-10 group min-h-[230px] ${
               isVisible ? "animate-fade-up" : "opacity-0"
             }`}
             style={{
               animationDelay: "0.45s",
+              border: "1px solid rgba(255,255,255,0.08)",
               background:
                 "linear-gradient(135deg, rgba(251,146,60,0.04) 0%, rgba(8,12,20,0.4) 100%)",
             }}
