@@ -5,11 +5,11 @@ const palette = ["#22d3ee", "#14b8a6", "#f472b6", "#fb923c", "#a78bfa"];
 const paletteLight = ["#67e8f9", "#5eead4", "#f9a8d4", "#fdba74", "#c4b5fd"];
 
 const stages = [
-  { label: "Industrial\nEmitters", stat: "29,000+" },
-  { label: "Capture\nInstallations", stat: "1,494" },
+  { label: "Industrial\nEmitters", stat: "30,000+" },
+  { label: "Capture\nInstallations", stat: "1,500+" },
   { label: "Pipeline\nTransport", stat: "115" },
-  { label: "Hubs &\nTerminals", stat: "43" },
-  { label: "Geological\nStorage", stat: "254" },
+  { label: "Hubs &\nTerminals", stat: "45+" },
+  { label: "Geological\nStorage", stat: "113" },
 ];
 
 /* ── Canvas particle system ── */
@@ -305,7 +305,7 @@ const ValueChain = () => {
           transition: "opacity 0.8s ease 1.5s, transform 0.8s ease 1.5s",
         }}
       >
-        <StatItem value="156" label="Countries" />
+        <StatItem value="150+" label="Countries" />
         <div className="hidden sm:block self-center" style={{ width: 1, height: 40, background: "linear-gradient(180deg, transparent, rgba(34,211,238,0.15), transparent)" }} />
         <StatItem value="5" label="Asset Classes" />
         <div className="hidden sm:block self-center" style={{ width: 1, height: 40, background: "linear-gradient(180deg, transparent, rgba(34,211,238,0.15), transparent)" }} />

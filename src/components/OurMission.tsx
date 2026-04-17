@@ -4,7 +4,7 @@ import industrialScene from "@/assets/industrial-scene.png";
 const stats = [
   { value: "10+ years", label: "CCS & energy transition experience" },
   { value: "€500M+", label: "In projects supported" },
-  { value: "25+", label: "Countries covered" },
+  { value: "150+", label: "Countries covered" },
   { value: "Full Stack", label: "Capture to storage" },
 ];
 

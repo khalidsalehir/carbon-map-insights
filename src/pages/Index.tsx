@@ -5,12 +5,10 @@ import StatsBar from "@/components/StatsBar";
 import LiveActivityFeed from "@/components/LiveActivityFeed";
 import ValueChain from "@/components/ValueChain";
 import WhyCarbonMap from "@/components/WhyCarbonMap";
-import FeaturesGrid from "@/components/FeaturesGrid";
 import OurMission from "@/components/OurMission";
 import Audience from "@/components/Audience";
 import ComparisonTable from "@/components/ComparisonTable";
 import FinalCTA from "@/components/FinalCTA";
-import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
 
 const SectionDivider = () => (
@@ -32,8 +30,6 @@ const Index = () => (
     <SectionDivider />
     <WhyCarbonMap />
     <SectionDivider />
-    <FeaturesGrid />
-    <SectionDivider />
     <OurMission />
     <SectionDivider />
     <Audience />
@@ -41,8 +37,6 @@ const Index = () => (
     <ComparisonTable />
     <SectionDivider />
     <FinalCTA />
-    <SectionDivider />
-    <Newsletter />
     <Footer />
   </div>
 );

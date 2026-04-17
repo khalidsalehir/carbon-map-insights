@@ -9,7 +9,7 @@ const audiences = [
   { icon: Pickaxe, title: "Strategy & BI Teams", desc: "Track market developments, identify white spots, and inform strategic decisions with complete CCS value chain data.", image: ccsDevelopers },
   { icon: Landmark, title: "Commercial Teams", desc: "Prepare for customer meetings with facility-level data. Cross-check capture potential and qualify new business leads.", image: investorsBanks },
   { icon: Scale, title: "Project Developers", desc: "Assess storage availability, transport options, and hub connections. Replace multiple fragmented data sources with one platform.", image: policyRegulators },
-  { icon: Users, title: "Policy & Research", desc: "Support policy studies, funding applications, and regulatory analysis with comprehensive, transparent CCS data across 156 countries.", image: consultantsAdvisors },
+  { icon: Users, title: "Policy & Research", desc: "Support policy studies, funding applications, and regulatory analysis with comprehensive, transparent CCS data across 150+ countries.", image: consultantsAdvisors },
 ];
 
 const Audience = () => {
