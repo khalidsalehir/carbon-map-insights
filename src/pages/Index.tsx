@@ -4,10 +4,10 @@ import DemoVideo from "@/components/DemoVideo";
 import StatsBar from "@/components/StatsBar";
 import LiveActivityFeed from "@/components/LiveActivityFeed";
 import ValueChain from "@/components/ValueChain";
-import WhyCarbonMap from "@/components/WhyCarbonMap";
+import ThreeMoats from "@/components/ThreeMoats";
 import OurMission from "@/components/OurMission";
 import Audience from "@/components/Audience";
-import ComparisonTable from "@/components/ComparisonTable";
+import WhatWeDo from "@/components/WhatWeDo";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 
@@ -28,13 +28,13 @@ const Index = () => (
     <SectionDivider />
     <ValueChain />
     <SectionDivider />
-    <WhyCarbonMap />
+    <ThreeMoats />
     <SectionDivider />
     <OurMission />
     <SectionDivider />
     <Audience />
     <SectionDivider />
-    <ComparisonTable />
+    <WhatWeDo />
     <SectionDivider />
     <FinalCTA />
     <Footer />
