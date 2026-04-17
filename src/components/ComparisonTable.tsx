@@ -5,7 +5,7 @@ const rows = [
   "Full value chain coverage",
   "30,000+ emitters globally",
   "Storage sites & transport networks",
-  "41 CCS hubs tracked",
+  "45+ CCS hubs tracked",
   "Live carbon market pricing (EU ETS, UK ETS, RGGI)",
   "CCS business case calculator",
   "CO₂ engineering tools (PVT, cost curves)",

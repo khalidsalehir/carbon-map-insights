@@ -2,10 +2,10 @@ import { useScrollAnimation, useCountUp } from "@/hooks/use-scroll-animation";
 
 const stats = [
   { value: 30000, suffix: "+", label: "Emitters", color: "text-primary" },
-  { value: 1400, suffix: "+", label: "Capture Projects", color: "text-primary" },
+  { value: 1500, suffix: "+", label: "Capture Projects", color: "text-primary" },
   { value: 113, suffix: "", label: "Storage Sites", color: "text-primary" },
-  { value: 41, suffix: "", label: "CCS Hubs", color: "text-primary" },
-  { value: 156, suffix: "", label: "Countries", color: "text-primary" },
+  { value: 45, suffix: "+", label: "CCS Hubs", color: "text-primary" },
+  { value: 150, suffix: "+", label: "Countries", color: "text-primary" },
 ];
 
 const StatItem = ({ stat, isVisible }: { stat: typeof stats[0]; isVisible: boolean }) => {

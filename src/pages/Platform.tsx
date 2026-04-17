@@ -172,7 +172,7 @@ const Platform = () => {
               Global CCS Map
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              Visualize 30,000+ emitters, 1,400 capture installations, and 105
+              Visualize 30,000+ emitters, 1,500+ capture installations, and 115
               infrastructure assets on a single interactive map. Toggle between
               capture, storage, transport, hubs, and emitter layers. Filter by
               project status, sector, country, and capacity.
@@ -197,7 +197,7 @@ const Platform = () => {
               CCS Storage Map
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              113 mapped storage sites with full project detail pages. Each project
+              113 mapped storage sites with full project detail pages. Each storage project
               shows capacity, engineering status, timeline, operator, partners,
               transport mode, and CO₂ destination — with AI-generated intelligence
               summaries.
@@ -234,8 +234,8 @@ const Platform = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
               <Metric value="627.5 Mtpa" label="Pipeline Capacity" />
               <Metric value="74 Mtpa" label="Operational" />
-              <Metric value="1,400" label="Capture Facilities" />
-              <Metric value="62" label="Nations Active" />
+              <Metric value="1,500+" label="Capture Facilities" />
+              <Metric value="150+" label="Nations Active" />
             </div>
 
             <div className="grid md:grid-cols-2 gap-4">
@@ -299,7 +299,7 @@ const Platform = () => {
               Emitter Database
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              26,902 facilities across 73 countries. 22.94 Gt total CO₂ — with
+              30,000+ facilities across 150+ countries. 22.94 Gt total CO₂ — with
               Fossil, Biogenic, and Capturable breakdown per facility. Filter by
               continent, sector, emissions threshold, and country.
             </p>
@@ -486,7 +486,7 @@ const Platform = () => {
 const faqItems = [
   {
     q: "What data does CarbonMap cover?",
-    a: "CarbonMap tracks 30,000+ industrial CO₂ emitters, 1,400+ capture installations, 113 storage sites, 41 CCS hubs, and transport infrastructure across 156 countries. Data includes facility-level emissions (fossil, biogenic, capturable), project status, capacity, timelines, operators, and partners.",
+    a: "CarbonMap tracks 30,000+ industrial CO₂ emitters, 1,500+ capture installations, 113 storage sites, 45+ CCS hubs, and transport infrastructure across 150+ countries. Data includes facility-level emissions (fossil, biogenic, capturable), project status, capacity, timelines, operators, and partners.",
   },
   {
     q: "How is the data sourced?",

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import globeHero from "@/assets/globe-hero.jpg";
 
 const particles = Array.from({ length: 20 }, (_, i) => ({
@@ -33,24 +34,25 @@ const HeroSection = () => (
           </h1>
 
           <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-            The most comprehensive CCS intelligence platform. Track emitters, capture installations,
+            The most comprehensive CCS intelligence platform. Track 30,000+ emitters, capture installations,
             transport networks, and storage sites — powered by AI analytics and real-time market data.
           </p>
 
           <div className="flex flex-wrap gap-4">
             <a
-              href="mailto:info@carbonmap.nl"
+              href="https://calendly.com/carbonmap-info/30min?month=2026-04"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary text-background px-8 py-3.5 rounded-lg font-body text-base font-semibold hover:opacity-90 transition-all glow-cyan"
             >
-              Request Early Access →
+              Book a 30-min call →
             </a>
-            <a
-              href="#demo-video"
-              onClick={(e) => { e.preventDefault(); document.getElementById('demo-video')?.scrollIntoView({ behavior: 'smooth' }); }}
+            <Link
+              to="/platform"
               className="border border-muted-foreground/30 text-muted-foreground px-8 py-3.5 rounded-lg font-body text-base font-semibold hover:border-primary/50 hover:text-primary transition-all"
             >
-              Watch Demo →
-            </a>
+              See the platform →
+            </Link>
           </div>
         </div>
 
