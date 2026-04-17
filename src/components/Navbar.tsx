@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
           <Globe className="w-7 h-7 text-primary transition-transform group-hover:rotate-12" />
-          <span className="text-lg font-display font-bold text-foreground">CarbonMap</span>
+          <span className="text-lg font-display font-bold text-foreground">Carbon<span style={{ color: '#22d3ee' }}>Map</span></span>
         </Link>
 
         {/* Desktop nav */}
