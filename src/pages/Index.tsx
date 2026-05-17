@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import DemoVideo from "@/components/DemoVideo";
 import StatsBar from "@/components/StatsBar";
-import LiveActivityFeed from "@/components/LiveActivityFeed";
 import ValueChain from "@/components/ValueChain";
 import ThreeMoats from "@/components/ThreeMoats";
 import OurMission from "@/components/OurMission";
@@ -23,8 +22,6 @@ const Index = () => (
     <DemoVideo />
     <SectionDivider />
     <StatsBar />
-    <SectionDivider />
-    <LiveActivityFeed />
     <SectionDivider />
     <ValueChain />
     <SectionDivider />
