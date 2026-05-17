@@ -1,15 +1,20 @@
 import { useEffect, useRef, useState } from "react";
+import vcEmitter from "@/assets/vc-emitter.jpg";
+import vcCapture from "@/assets/vc-capture.jpg";
+import vcTransport from "@/assets/vc-transport.jpg";
+import vcHub from "@/assets/vc-hub.jpg";
+import vcStorage from "@/assets/vc-storage.jpg";
 
 /* ── Palette & data ── */
-const palette = ["#22d3ee", "#14b8a6", "#f472b6", "#fb923c", "#a78bfa"];
-const paletteLight = ["#67e8f9", "#5eead4", "#f9a8d4", "#fdba74", "#c4b5fd"];
+const palette = ["#22d3ee", "#14b8a6", "#a78bfa", "#fb923c", "#f472b6"];
+const paletteLight = ["#67e8f9", "#5eead4", "#c4b5fd", "#fdba74", "#f9a8d4"];
 
 const stages = [
-  { label: "Industrial\nEmitters", stat: "30,000+" },
-  { label: "Capture\nInstallations", stat: "1,500+" },
-  { label: "Pipeline\nTransport", stat: "115" },
-  { label: "Hubs &\nTerminals", stat: "45+" },
-  { label: "Geological\nStorage", stat: "113" },
+  { label: "Industrial\nEmitters", stat: "30,000+", image: vcEmitter, tag: "Source" },
+  { label: "Capture\nInstallations", stat: "1,500+", image: vcCapture, tag: "Capture" },
+  { label: "Pipeline\nTransport", stat: "115", image: vcTransport, tag: "Transport" },
+  { label: "Hubs &\nTerminals", stat: "45+", image: vcHub, tag: "Hub" },
+  { label: "Geological\nStorage", stat: "113", image: vcStorage, tag: "Storage" },
 ];
 
 /* ── Canvas particle system ── */
@@ -389,33 +394,52 @@ const NodeCard = ({ stage, index, isVisible }: { stage: typeof stages[0]; index:
         {index + 1}
       </div>
 
-      {/* Icon with rings */}
-      <div className="relative flex items-center justify-center mb-6" style={{ width: 88, height: 88 }}>
+      {/* Industrial photo */}
+      <div
+        className="relative w-full overflow-hidden mb-6 rounded-[14px]"
+        style={{
+          aspectRatio: "4 / 5",
+          border: `1px solid ${color}33`,
+          boxShadow: `0 12px 40px rgba(0,0,0,0.4), inset 0 0 0 1px rgba(255,255,255,0.03)`,
+        }}
+      >
+        <img
+          src={stage.image}
+          alt={stage.label.replace("\n", " ")}
+          loading="lazy"
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms]"
+          style={{ transform: hovered ? "scale(1.08)" : "scale(1)" }}
+        />
+        {/* Color wash + readability gradient */}
         <div
-          className="absolute rounded-full"
+          className="absolute inset-0 pointer-events-none"
           style={{
-            inset: -4,
-            border: `1px solid ${color}`,
-            opacity: 0.15,
-            animation: "ringPulse 4s ease-in-out infinite",
+            background: `linear-gradient(180deg, ${color}1a 0%, rgba(8,12,20,0.1) 35%, rgba(8,12,20,0.85) 100%)`,
+            mixBlendMode: "normal",
           }}
         />
+        {/* Tag chip */}
         <div
-          className="absolute rounded-full"
+          className="absolute top-3 left-3 px-2 py-1 rounded-[3px] font-mono text-[10px] uppercase tracking-[0.15em] backdrop-blur-md"
           style={{
-            inset: -16,
-            border: `1px solid ${color}`,
-            opacity: 0.06,
-            animation: "ringPulse 4s ease-in-out 1s infinite",
+            background: `${color}22`,
+            color: colorLight,
+            border: `1px solid ${color}40`,
           }}
-        />
-        <div className="relative z-[2]">
-          {NodeIcons[index](color)}
+        >
+          {stage.tag}
+        </div>
+        {/* Pulse dot */}
+        <div className="absolute top-3 right-3 flex items-center gap-1.5">
+          <span
+            className="w-1.5 h-1.5 rounded-full animate-pulse"
+            style={{ background: color, boxShadow: `0 0 8px ${color}` }}
+          />
         </div>
       </div>
 
       {/* Label */}
-      <p className="font-body text-sm font-medium text-muted-foreground text-center mb-3.5 min-h-[44px] flex items-center justify-center whitespace-pre-line leading-snug">
+      <p className="font-body text-sm font-semibold text-foreground/90 text-center mb-3 whitespace-pre-line leading-snug">
         {stage.label}
       </p>
 
