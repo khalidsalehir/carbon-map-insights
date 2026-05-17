@@ -127,6 +127,7 @@ const ThreeMoats = () => {
                 +2.3%
               </div>
             </div>
+            </div>
           </div>
 
           {/* Tile 3 — Bottom right */}
@@ -191,6 +192,7 @@ const ThreeMoats = () => {
               <div className="text-xs font-mono uppercase tracking-wider text-muted-foreground leading-tight">
                 20 emitters →<br />1 shared hub
               </div>
+            </div>
             </div>
           </div>
         </div>
