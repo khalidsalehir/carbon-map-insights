@@ -1,6 +1,8 @@
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { ArrowUpRight } from "lucide-react";
 import pipelineNetwork from "@/assets/pipeline-network.png";
+import moatEts from "@/assets/moat-ets.jpg";
+import moatHub from "@/assets/moat-hub.jpg";
 
 const ThreeMoats = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -79,7 +81,7 @@ const ThreeMoats = () => {
 
           {/* Tile 2 — Top right */}
           <div
-            className={`relative rounded-[4px] hover:border-primary/40 transition-all duration-300 p-10 group min-h-[230px] ${
+            className={`relative rounded-[4px] hover:border-primary/40 transition-all duration-300 p-10 group min-h-[230px] overflow-hidden ${
               isVisible ? "animate-fade-up" : "opacity-0"
             }`}
             style={{
@@ -89,6 +91,20 @@ const ThreeMoats = () => {
                 "linear-gradient(135deg, rgba(20,184,166,0.04) 0%, rgba(8,12,20,0.4) 100%)",
             }}
           >
+            <img
+              src={moatEts}
+              alt=""
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover opacity-25 group-hover:opacity-40 transition-opacity duration-700"
+            />
+            <div
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background:
+                  "linear-gradient(135deg, rgba(8,12,20,0.85) 0%, rgba(8,12,20,0.7) 50%, rgba(8,12,20,0.9) 100%)",
+              }}
+            />
+            <div className="relative z-10">
             <div className="text-xs font-mono uppercase tracking-[0.2em] text-stat-orange mb-4">
               Live ETS Economics
             </div>
@@ -111,11 +127,12 @@ const ThreeMoats = () => {
                 +2.3%
               </div>
             </div>
+            </div>
           </div>
 
           {/* Tile 3 — Bottom right */}
           <div
-            className={`relative rounded-[4px] hover:border-primary/40 transition-all duration-300 p-10 group min-h-[230px] ${
+            className={`relative rounded-[4px] hover:border-primary/40 transition-all duration-300 p-10 group min-h-[230px] overflow-hidden ${
               isVisible ? "animate-fade-up" : "opacity-0"
             }`}
             style={{
@@ -125,6 +142,20 @@ const ThreeMoats = () => {
                 "linear-gradient(135deg, rgba(251,146,60,0.04) 0%, rgba(8,12,20,0.4) 100%)",
             }}
           >
+            <img
+              src={moatHub}
+              alt=""
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover opacity-25 group-hover:opacity-40 transition-opacity duration-700"
+            />
+            <div
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background:
+                  "linear-gradient(135deg, rgba(8,12,20,0.85) 0%, rgba(8,12,20,0.7) 50%, rgba(8,12,20,0.9) 100%)",
+              }}
+            />
+            <div className="relative z-10">
             <div className="text-xs font-mono uppercase tracking-[0.2em] text-stat-pink mb-4">
               Hub Cluster Economics
             </div>
@@ -161,6 +192,7 @@ const ThreeMoats = () => {
               <div className="text-xs font-mono uppercase tracking-wider text-muted-foreground leading-tight">
                 20 emitters →<br />1 shared hub
               </div>
+            </div>
             </div>
           </div>
         </div>
